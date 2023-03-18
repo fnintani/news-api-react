@@ -78,3 +78,17 @@ body {
 .card-link {
 
 }
+
+.loading-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loading-container h2 {
+	color: pink;
+}
+
+.error-container h2 {
+	color: red;
+}
