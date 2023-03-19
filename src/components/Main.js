@@ -54,7 +54,7 @@ useEffect(() => {
                     value={search}
                     >
                     </input>
-                    <button>search</button>
+                    <button className="submit-btn">search</button>
                 </form>
             </div>
             {isLoading && <Loading />}
