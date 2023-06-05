@@ -14,8 +14,7 @@
 }
 
 body {
-	/* background-color: var(--extra-light-color);
-	 */
+	
 	 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 16px;
@@ -24,9 +23,18 @@ body {
 
 .navbar {
 	background-color: var(--dark-color);
-	width: 100vw;
-	height: 40px;
+	width: 100%;
 	padding: 10px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.app-name {
+	color: rgb(234, 246, 247);
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	font-style: italic;
 }
 
 .link-home {
@@ -34,6 +42,7 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 1.2em;
+	margin-left: auto;
 }
 
 .form-container {
@@ -92,7 +101,7 @@ body {
 
 .card {
 	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
-    width: 265px;
+    width: 260px;
     background-color: rgba(170, 198, 199, 0.4);
     margin: 1rem;
     border-radius: 5px;
