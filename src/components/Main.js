@@ -57,7 +57,7 @@ export default function Main() {
             }}
             value={search}
           ></input>
-          <button className="submit-btn">search</button>
+          <input type="submit" className="submit-btn" value="search" />
         </form>
       </div>
       {isLoading && <Loading />}

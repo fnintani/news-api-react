@@ -9,13 +9,13 @@
 :root{
 	--dark-color: rgb(44, 51, 51);
 	--medium-color: rgb(46, 79, 79);
-	--light-color:rgb(14, 131, 136);
-	--extra-light-color: rgba(253,187,45,1);
+	--light-color:rgb(189, 212, 212);
+	--extra-light-color: rgb(234, 246, 247);;
 }
 
 body {
 	
-	 background: linear-gradient(0deg, rgb(240, 255, 255) 0%, rgb(255, 244, 220) 100%);
+	background: linear-gradient(0deg, rgb(240, 255, 255) 0%, rgb(255, 244, 220) 100%);
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 16px;
 	min-height: 100vh;
@@ -25,24 +25,15 @@ body {
 	background-color: var(--dark-color);
 	width: 100%;
 	padding: 10px;
-	display: flex;
-	justify-content: start;
-	align-items: center;
 }
 
 .app-name {
-	color: rgb(234, 246, 247);
+	color: var(--extra-light-color);
 	font-size: 1.5em;
 	letter-spacing: 2px;
 	font-style: italic;
-}
-
-.link-home {
-	color: var(--extra-light-color);
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 1.2em;
-	margin-left: auto;
 }
 
 .form-container {
@@ -51,43 +42,48 @@ body {
 	height: 35px;
 }
 
-.input-text {
-	width:75%;
+input {
+	position: relative;
 	display: inline-block;
-	border-radius:5px;
+	font-size: 20px;
+	transition: 0.5s;
+}
+.input-text {
+	width:65%;
+	display: inline-block;
 	height: 35px;
-	border: 2px solid var(--medium-color); 
-	outline: 1px solid gray;
+	border: none; 
+	outline: none;
+	border-radius: 25px 0 0 25px;
+	background-color: rgb(218, 218, 218);
 }
 
 .submit-btn {
-	width: 100px;
-	padding: 6px;
-	display: inline-block;
-	border-radius:5px;
+	position: relative;
+	top: -3px;
+	width: 150px;
+	border-radius: 0 25px 25px 0;
 	height: 35px;
-	font-size: 0.7em;
+	font-size: 0.8em;
+	font-weight: 500;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 	border: none;
 	outline: none;
+	cursor: pointer;
 	box-sizing: border-box;
-	margin-left: 2px;
-	border: 2px solid var(--medium-color); 
-	transition: all 0.2s ease-in-out;
 	background-color: var(--medium-color);
 	color: white
 }
 
-.submit-btn:hover, 
-.input-text:hover {
+input {
 	cursor: pointer;
 }
 
 .submit-btn:hover{
 	font-size: 0.8;
-	background-color: white;
-	color: var(--medium-color)
+	background-color: var(--dark-color);
+	color: var(--extra-light-color)
 }
 
 .container-card {
@@ -102,12 +98,21 @@ body {
 .card {
 	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
     width: 260px;
-    background-color: rgba(170, 198, 199, 0.4);
+    background-color: var(--medium-color);
+	color: aliceblue;
     margin: 1rem;
     border-radius: 5px;
     box-sizing: border-box;
     border-radius: 8px;
     overflow: hidden;
+}
+
+.card:hover {
+	box-shadow: 0 8px 10px rgba(0,0,0,0.5);
+}
+
+.card-text{
+	color: rgba(182, 182, 182, 0.9);
 }
 
 .card-img {
@@ -130,12 +135,11 @@ body {
 
 .card-link {
 	display: block;
-	color: rgb(46, 79, 79);
+	color: var(--extra-light-color);
 	text-decoration: none;
 	justify-self: end;
 	align-self: end;
 	animation: blink 1.8s linear infinite;
-
 }
 
 .loading-container, 
